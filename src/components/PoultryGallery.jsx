@@ -17,14 +17,14 @@ export default function PoultryGallery() {
     {
       title: "Healthy White Broiler Flocks",
       category: "Al Wagan Sheds",
-      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=900&q=80",
       description: "Active, healthy white broiler chickens reared in climate-controlled, stress-free sheds in Al Ain."
     },
     {
-      title: "Bio-Secure Poultry Housing",
+      title: "White Broiler Shed Environment",
       category: "100 Modern Sheds",
-      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=900&q=80",
-      description: "Evaporative cooling pads, computerised airflow, and strict biosecurity perimeter in Al Ain desert."
+      image: "https://images.unsplash.com/photo-1786119445014-6a0cedbdfd69?auto=format&fit=crop&w=900&q=80",
+      description: "Bio-secure, spacious sheds designed for healthy white broiler welfare and growth."
     },
     {
       title: "Prime White Broiler Showcase",
@@ -33,22 +33,22 @@ export default function PoultryGallery() {
       description: "Uniform, healthy white broilers bred for tenderness, natural nutrition, and optimal meat yield."
     },
     {
-      title: "100% Vegetarian Feed Nutrition",
-      category: "10,000t Feed Mill",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=900&q=80",
-      description: "Custom-formulated corn and soy grain nutrition, free from animal by-products and artificial hormones."
+      title: "Pure White Broiler Health",
+      category: "Daily Care",
+      image: "https://images.unsplash.com/photo-1780105200761-6511f3a2ee3a?auto=format&fit=crop&w=900&q=80",
+      description: "Balanced vegetarian corn and soy nutrition, free from animal by-products and artificial hormones."
     },
     {
-      title: "Hygienic Halal Processing Line",
-      category: "4,000 Birds / Hour",
-      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=900&q=80",
-      description: "Modern in-house slaughterhouse operating strictly under Islamic Halal rites and ADAFSA standards."
+      title: "White Broiler Vitality",
+      category: "Al Ain Farms",
+      image: "https://images.unsplash.com/photo-1770993158197-bfe844a3885d?auto=format&fit=crop&w=900&q=80",
+      description: "Monitored round the clock under ADAFSA regulations and avian veterinary supervision."
     },
     {
-      title: "0°C - 4°C Cold-Chain Fleet",
-      category: "UAE Daily Dispatch",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80",
-      description: "Temperature-logged refrigerated transport delivering daily to UAE hypermarkets and restaurants."
+      title: "White Broiler Flock Management",
+      category: "25 Farm Hubs",
+      image: "https://images.unsplash.com/photo-1788860175608-eb26d18f437c?auto=format&fit=crop&w=900&q=80",
+      description: "Clean, humane desert farming providing fresh white broiler chicken across the UAE."
     }
   ];
 

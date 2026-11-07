@@ -124,14 +124,14 @@ export default function Hero({ onOpenQuote }) {
                 {/* Background Poultry Shed Visual */}
                 <div className="relative h-44 sm:h-52 w-full rounded-2xl overflow-hidden mb-3 border border-farm-100 shadow-inner">
                   <img
-                    src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=80"
-                    alt="Al Wagan Modern Broiler Sheds"
-                    className="w-full h-full object-cover filter brightness-[0.92]"
+                    src="https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=800&q=80"
+                    alt="Al Wagan White Broiler Chickens"
+                    className="w-full h-full object-cover filter brightness-[0.95]"
                     loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-farm-950/80 via-farm-950/20 to-transparent flex items-end p-3">
                     <span className="text-[11px] text-amberGold-300 font-bold tracking-wide">
-                      📍 Al Wagan Bio-Secure Broiler Sheds
+                      📍 Al Wagan White Broiler Chickens
                     </span>
                   </div>
                 </div>

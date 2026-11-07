@@ -14,11 +14,11 @@ export const companyData = {
   
   images: {
     hero: "/images/white-broiler-chicken.png", // White broiler chicken — user uploaded
-    heroFarm: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1400&q=80", // White broiler chicken flock in modern shed
-    aboutFarm: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=1200&q=80", // Poultry farm chickens
-    slaughterhouse: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=1200&q=80", // Fresh whole chicken — hygienic processing
-    feedMill: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1200&q=80", // Grain & feed for poultry
-    coldLogistics: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80", // Temperature-controlled cold chain transport
+    heroFarm: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=1400&q=80", // White broiler chickens on farm
+    aboutFarm: "https://images.unsplash.com/photo-1786119445014-6a0cedbdfd69?auto=format&fit=crop&w=1200&q=80", // White broiler chicken on farm
+    slaughterhouse: "/images/white-broiler-chicken.png", // White broiler chicken
+    feedMill: "https://images.unsplash.com/photo-1780105200761-6511f3a2ee3a?auto=format&fit=crop&w=1200&q=80", // White chicken
+    coldLogistics: "https://images.unsplash.com/photo-1770993158197-bfe844a3885d?auto=format&fit=crop&w=1200&q=80", // White chicken
   },
 
   licenses: [
@@ -173,7 +173,7 @@ export const companyData = {
       id: "custom-supply",
       name: "Customised Chicken Supply",
       tagline: "Tailored Cuts, Specific Weights & Custom Packaging",
-      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80", // Portioned chicken cuts — custom packaging
+      image: "https://images.unsplash.com/photo-1786119445014-6a0cedbdfd69?auto=format&fit=crop&w=800&q=80", // White broiler chicken
       description: "Custom supply arrangements based on requested cut specifications, precise weight bands, vacuum or modified atmosphere packaging (MAP), and private labeling.",
       segments: ["Food Distributors", "Commercial Food Processors", "Specialty Food Chains"],
       features: [
@@ -193,21 +193,21 @@ export const companyData = {
       step: 1,
       title: "Flock Planning",
       desc: "Flock placement cycles, production scheduling, and market demand coordination across all 25 farm locations in Al Ain.",
-      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=700&q=80",
       icon: "Calendar"
     },
     {
       step: 2,
       title: "Feed & Grain Nutrition",
       desc: "Rigorous procurement of high-grade raw grains, veterinary supplies, climate equipment, and essential farm inputs.",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1780105200761-6511f3a2ee3a?auto=format&fit=crop&w=700&q=80",
       icon: "ShoppingBag"
     },
     {
       step: 3,
       title: "Shed Climate & Rearing",
       desc: "Routine shed climate monitoring, balanced feeding, pure water supply, biometrics tracking, and real-time record keeping.",
-      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1786119445014-6a0cedbdfd69?auto=format&fit=crop&w=700&q=80",
       icon: "Activity"
     },
     {
@@ -221,14 +221,14 @@ export const companyData = {
       step: 5,
       title: "Halal Processing",
       desc: "Careful handling and preparation in our in-house slaughterhouse (4,000 birds/hr) adhering to highest hygiene standards.",
-      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1770993158197-bfe844a3885d?auto=format&fit=crop&w=700&q=80",
       icon: "CheckCircle"
     },
     {
       step: 6,
       title: "0°C - 4°C Cold Dispatch",
       desc: "Refrigerated cold-chain fleet dispatch, timely route planning, and guaranteed fresh delivery across Abu Dhabi, Dubai, and UAE.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1788860175608-eb26d18f437c?auto=format&fit=crop&w=700&q=80",
       icon: "Truck"
     }
   ],
@@ -238,56 +238,56 @@ export const companyData = {
       title: "100 Poultry Sheds",
       desc: "State-of-the-art poultry sheds across 25 strategic locations in Al Ain with climate control, automated feeding, and 2 million bird capacity.",
       stat: "100 Sheds",
-      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=700&q=80",
       icon: "Building"
     },
     {
       title: "Feed Production Facility",
       desc: "Dedicated feed manufacturing mill producing tailored, balanced, nutritious poultry feed to support continuous, self-sufficient farm growth.",
       stat: "10,000 t / Year",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1786119445014-6a0cedbdfd69?auto=format&fit=crop&w=700&q=80",
       icon: "Wheat"
     },
     {
       title: "Feed Storage Silos",
       desc: "Modern climate-protected storage silos for the safe storage and pest-free handling of grain and poultry feed reserves.",
       stat: "Continuous Reserve",
-      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1780105200761-6511f3a2ee3a?auto=format&fit=crop&w=700&q=80",
       icon: "Database"
     },
     {
       title: "Water Supply & Filtration",
       desc: "Comprehensive deep water well testing, reverse osmosis purification, and distribution network providing pure water to every shed.",
       stat: "24/7 Pure Flow",
-      image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1770993158197-bfe844a3885d?auto=format&fit=crop&w=700&q=80",
       icon: "Droplets"
     },
     {
       title: "Modern Farm Machinery",
       desc: "Dedicated equipment rooms, backup generators, temperature monitoring sensors, and automated ventilation machinery.",
       stat: "Automated Agritech",
-      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1788860175608-eb26d18f437c?auto=format&fit=crop&w=700&q=80",
       icon: "Wrench"
     },
     {
       title: "In-house Slaughterhouse",
       desc: "Modern processing facility capable of hygienically processing 4,000 birds per hour under strict veterinary and Halal inspection.",
       stat: "4,000 Birds / Hr",
-      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=700&q=80",
+      image: "/images/white-broiler-chicken.png",
       icon: "Zap"
     },
     {
       title: "Cold Chain Logistics Fleet",
       desc: "Refrigerated transport fleet maintaining unbroken cold chains from processing directly to customer facilities across the UAE.",
       stat: "0°C - 4°C Maintained",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1790334812445-97a6adb7af45?auto=format&fit=crop&w=700&q=80",
       icon: "Truck"
     },
     {
       title: "Supporting Infrastructure",
       desc: "Administrative offices, staff quarters, veterinary diagnostic laboratory, and biosecurity sanitation vehicle wash bays.",
       stat: "25 Locations",
-      image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=700&q=80",
       icon: "ShieldCheck"
     }
   ],
@@ -300,7 +300,7 @@ export const companyData = {
       shedCount: "35 Sheds",
       locationDesc: "Southern Al Ain agricultural belt",
       specialty: "Primary Broiler Operations & Main In-House Processing",
-      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=80",
+      image: "/images/white-broiler-chicken.png",
       highlights: ["Central Veterinary Lab", "Main Slaughterhouse (4k/hr)", "Central Dispatch Fleet"]
     },
     {
@@ -320,7 +320,7 @@ export const companyData = {
       shedCount: "20 Sheds",
       locationDesc: "Eastern Al Ain pastoral zone",
       specialty: "Feed Milling & Dedicated Broiler Infrastructure",
-      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1786119445014-6a0cedbdfd69?auto=format&fit=crop&w=800&q=80",
       highlights: ["10,000t Feed Mill Facility", "Grain Storage Silos", "Solar Energy Pilot Sheds"]
     },
     {
@@ -330,7 +330,7 @@ export const companyData = {
       shedCount: "20 Sheds",
       locationDesc: "Strategic Al Ain green perimeter",
       specialty: "High-Biosecurity Quarantine & Raising Facilities",
-      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1780105200761-6511f3a2ee3a?auto=format&fit=crop&w=800&q=80",
       highlights: ["Ultra-low Density Rearing", "ADAFSA Priority Audited", "Strict Perimeter Isolation"]
     }
   ],
@@ -340,7 +340,7 @@ export const companyData = {
       number: "01",
       title: "GCC Export Market Expansion",
       desc: "Scaling our premium fresh broiler supply into GCC export markets, targeting Saudi Arabia, Oman, Qatar, and Bahrain through certified cold-chain logistics and compliant international packaging.",
-      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=800&q=80",
       bulletPoints: [
         "Obtaining GCC cross-border food export certifications and permits.",
         "Establishing temperature-logged refrigerated logistics routes across GCC borders.",
@@ -353,7 +353,7 @@ export const companyData = {
       number: "02",
       title: "New Processing Line Expansion",
       desc: "Doubling our in-house slaughterhouse processing capacity to 8,000 birds per hour with a second modern Halal processing line, advanced portioning, and packaging automation.",
-      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80",
+      image: "/images/white-broiler-chicken.png",
       bulletPoints: [
         "Installing a second automated Halal slaughter and processing line.",
         "Integrating robotic portioning, vacuum sealing, and portion control systems.",
@@ -366,7 +366,7 @@ export const companyData = {
       number: "03",
       title: "Smart Poultry Farm Technology",
       desc: "Implementing AI-powered flock monitoring, IoT climate controls, and data-driven feed management across all 100 sheds to maximize bird performance and biosecurity.",
-      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1786119445014-6a0cedbdfd69?auto=format&fit=crop&w=800&q=80",
       bulletPoints: [
         "Deploying IoT sensors for real-time shed temperature, humidity, and ammonia monitoring.",
         "Integrating AI-driven flock weight tracking and feed optimization algorithms.",
@@ -381,14 +381,14 @@ export const companyData = {
     {
       title: "Healthy White Broiler Flocks",
       category: "Al Wagan Sheds",
-      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=900&q=80",
       description: "Active, healthy white broiler chickens reared in climate-controlled, stress-free sheds in Al Ain."
     },
     {
-      title: "Bio-Secure Poultry Housing",
+      title: "White Broiler Shed Environment",
       category: "100 Modern Sheds",
-      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=900&q=80",
-      description: "Evaporative cooling pads, computerised airflow, and strict biosecurity perimeter in Al Ain desert."
+      image: "https://images.unsplash.com/photo-1786119445014-6a0cedbdfd69?auto=format&fit=crop&w=900&q=80",
+      description: "Bio-secure, spacious sheds designed for healthy white broiler welfare and growth."
     },
     {
       title: "Prime White Broiler Showcase",
@@ -397,22 +397,22 @@ export const companyData = {
       description: "Uniform, healthy white broilers bred for tenderness, natural nutrition, and optimal meat yield."
     },
     {
-      title: "100% Vegetarian Feed Nutrition",
-      category: "10,000t Feed Mill",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=900&q=80",
-      description: "Custom-formulated corn and soy grain nutrition, free from animal by-products and artificial hormones."
+      title: "Pure White Broiler Health",
+      category: "Daily Care",
+      image: "https://images.unsplash.com/photo-1780105200761-6511f3a2ee3a?auto=format&fit=crop&w=900&q=80",
+      description: "Balanced vegetarian corn and soy nutrition, free from animal by-products and artificial hormones."
     },
     {
-      title: "Hygienic Halal Processing Line",
-      category: "4,000 Birds / Hour",
-      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=900&q=80",
-      description: "Modern in-house slaughterhouse operating strictly under Islamic Halal rites and ADAFSA standards."
+      title: "White Broiler Vitality",
+      category: "Al Ain Farms",
+      image: "https://images.unsplash.com/photo-1770993158197-bfe844a3885d?auto=format&fit=crop&w=900&q=80",
+      description: "Monitored round the clock under ADAFSA regulations and avian veterinary supervision."
     },
     {
-      title: "0°C - 4°C Cold-Chain Fleet",
-      category: "UAE Daily Dispatch",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80",
-      description: "Temperature-logged refrigerated transport delivering daily to UAE hypermarkets and restaurants."
+      title: "White Broiler Flock Management",
+      category: "25 Farm Hubs",
+      image: "https://images.unsplash.com/photo-1788860175608-eb26d18f437c?auto=format&fit=crop&w=900&q=80",
+      description: "Clean, humane desert farming providing fresh white broiler chicken across the UAE."
     }
   ],
 
