@@ -53,7 +53,7 @@ export default function PoultryGallery() {
   ];
 
   return (
-    <section id="gallery" className="scroll-mt-24 sm:scroll-mt-28 py-16 sm:py-20 bg-gradient-to-b from-[#F7FBF8] to-white border-b border-farm-100">
+    <section id="gallery" className="scroll-mt-24 sm:scroll-mt-28 py-16 sm:py-20 bg-gradient-to-b from-[#FFFDF9] via-[#FAF6EE] to-white border-b border-farm-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

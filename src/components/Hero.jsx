@@ -17,17 +17,17 @@ import { companyData } from '../data/poultryData';
 
 export default function Hero({ onOpenQuote }) {
   return (
-    <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#f5f9f5] via-[#faf8f2] to-[#FCFBF7]">
-      {/* Decorative background glow */}
-      <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-farm-200/40 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
-      <div className="absolute bottom-0 left-0 w-72 sm:w-96 h-72 sm:h-96 bg-amberGold-100/40 rounded-full blur-3xl pointer-events-none -ml-20 -mb-20"></div>
+    <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#FFFDF9] via-[#FAF6EE] to-[#FFFFFF]">
+      {/* Decorative background glow — warm chicken feather ivory & golden amber glow */}
+      <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-amberGold-200/30 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
+      <div className="absolute bottom-0 left-0 w-72 sm:w-96 h-72 sm:h-96 bg-farm-200/30 rounded-full blur-3xl pointer-events-none -ml-20 -mb-20"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Top Regulatory & Brand Badges */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-5 sm:mb-6">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-farm-100/90 text-farm-900 text-[11px] sm:text-xs font-semibold border border-farm-200 shadow-xs">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-farm-100 text-farm-900 text-[11px] sm:text-xs font-semibold border border-farm-200 shadow-xs">
+            <span className="w-2 h-2 rounded-full bg-farm-600 animate-pulse"></span>
             <span>AAMIR AL WAGAN POULTRY FARM L.L.C</span>
           </div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amberGold-50 text-amberGold-800 text-[11px] sm:text-xs font-semibold border border-amberGold-200 shadow-xs">
@@ -119,7 +119,7 @@ export default function Hero({ onOpenQuote }) {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* White Broiler Chicken & Modern Shed Showcase Card */}
-              <div className="relative rounded-3xl bg-gradient-to-b from-white to-[#F5FAF6] p-4 sm:p-6 border-2 border-farm-200/80 shadow-2xl overflow-hidden">
+              <div className="relative rounded-3xl bg-gradient-to-b from-white to-[#FFFDF9] p-4 sm:p-6 border-2 border-farm-200/90 shadow-2xl overflow-hidden">
                 
                 {/* Background Poultry Shed Visual */}
                 <div className="relative h-44 sm:h-52 w-full rounded-2xl overflow-hidden mb-3 border border-farm-100 shadow-inner">

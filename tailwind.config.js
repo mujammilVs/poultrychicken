@@ -7,19 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Chicken Comb & Wattle Crimson Red Palette
         farm: {
-          50: '#f3f8f4',
-          100: '#e3efe6',
-          200: '#c8e0ce',
-          300: '#9ec9a8',
-          400: '#6ea97d',
-          500: '#488c5a',
-          600: '#367246',
-          700: '#2c5b39',
-          800: '#1c3d26',
-          900: '#142d1c',
-          950: '#0a170e',
+          50: '#fff1f2',
+          100: '#ffe4e6',
+          200: '#fecdd3',
+          300: '#fda4af',
+          400: '#fb7185',
+          500: '#f43f5e',
+          600: '#e11d48',
+          700: '#be123c',
+          800: '#9f1239',
+          900: '#881337',
+          950: '#4c0519',
         },
+        // Chicken Beak & Legs Golden Amber Palette
         amberGold: {
           50: '#fffbeb',
           100: '#fef3c7',
@@ -30,11 +32,12 @@ export default {
           600: '#d97706',
           700: '#b45309',
         },
+        // Feather White, Eggshell & Warm Ivory Palette
         cream: {
-          50: '#fdfdfb',
-          100: '#faf8f2',
-          200: '#f5f2e7',
-          300: '#eae4d3',
+          50: '#fffdf9',
+          100: '#faf6ee',
+          200: '#f5ede0',
+          300: '#ebdcc9',
         }
       },
       fontFamily: {
@@ -42,8 +45,8 @@ export default {
         display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        'soft': '0 4px 20px -2px rgba(16, 24, 40, 0.05), 0 2px 6px -2px rgba(16, 24, 40, 0.03)',
-        'premium': '0 20px 40px -15px rgba(28, 61, 38, 0.12)',
+        'soft': '0 4px 20px -2px rgba(136, 19, 55, 0.06), 0 2px 6px -2px rgba(136, 19, 55, 0.04)',
+        'premium': '0 20px 40px -15px rgba(159, 18, 57, 0.18)',
         'elevated': '0 25px 50px -12px rgba(0, 0, 0, 0.08)',
       }
     },

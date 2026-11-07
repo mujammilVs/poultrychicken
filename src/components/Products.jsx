@@ -56,7 +56,7 @@ export default function Products({ onOpenQuote, onSelectQuoteFromCalc }) {
                     src={prod.image}
                     alt={prod.name}
                     className={`w-full h-full transform hover:scale-105 transition-transform duration-500 ${
-                      prod.image.includes('white-broiler') ? 'object-contain p-3 bg-gradient-to-b from-white to-[#F5FAF6]' : 'object-cover'
+                      prod.image.includes('white-broiler') ? 'object-contain p-3 bg-gradient-to-b from-white to-[#FFFDF9]' : 'object-cover'
                     }`}
                     fallbackIcon={Feather}
                   />
