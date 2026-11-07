@@ -7,21 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Chicken Comb & Wattle Crimson Red Palette
+        // Authentic Poultry Comb Crimson Red & Feather Neutral Palette
         farm: {
-          50: '#fff1f2',
-          100: '#ffe4e6',
-          200: '#fecdd3',
-          300: '#fda4af',
-          400: '#fb7185',
-          500: '#f43f5e',
-          600: '#e11d48',
-          700: '#be123c',
-          800: '#9f1239',
-          900: '#881337',
-          950: '#4c0519',
+          50: '#faf9f6',   // clean feather ivory
+          100: '#f4f2ee',  // soft eggshell neutral
+          200: '#e8e5df',  // crisp neutral border
+          300: '#d5d0c7',
+          400: '#b0a99c',
+          500: '#ef4444',
+          600: '#dc2626',  // bright comb red
+          700: '#b91c1c',  // rooster crimson
+          800: '#991b1b',  // rich poultry red (primary button/brand)
+          900: '#7f1d1d',  // deep poultry burgundy
+          950: '#450a0a',  // dark ruby slate
         },
-        // Chicken Beak & Legs Golden Amber Palette
+        // Chicken Beak & Legs Golden Corn Amber Palette
         amberGold: {
           50: '#fffbeb',
           100: '#fef3c7',
@@ -34,10 +34,10 @@ export default {
         },
         // Feather White, Eggshell & Warm Ivory Palette
         cream: {
-          50: '#fffdf9',
-          100: '#faf6ee',
-          200: '#f5ede0',
-          300: '#ebdcc9',
+          50: '#ffffff',
+          100: '#faf9f6',
+          200: '#f5f3ee',
+          300: '#eae6dd',
         }
       },
       fontFamily: {
@@ -45,8 +45,8 @@ export default {
         display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        'soft': '0 4px 20px -2px rgba(136, 19, 55, 0.06), 0 2px 6px -2px rgba(136, 19, 55, 0.04)',
-        'premium': '0 20px 40px -15px rgba(159, 18, 57, 0.18)',
+        'soft': '0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -2px rgba(15, 23, 42, 0.03)',
+        'premium': '0 20px 40px -15px rgba(153, 27, 27, 0.16)',
         'elevated': '0 25px 50px -12px rgba(0, 0, 0, 0.08)',
       }
     },

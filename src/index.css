@@ -11,19 +11,19 @@
   }
 }
 
-/* Custom scrollbar — chicken comb crimson & feather ivory */
+/* Custom scrollbar — chicken comb red & clean neutral ivory */
 ::-webkit-scrollbar {
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #faf6ee;
+  background: #f4f2ee;
 }
 ::-webkit-scrollbar-thumb {
-  background: #f43f5e;
+  background: #dc2626;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #be123c;
+  background: #991b1b;
 }
 
 .serif-title {
@@ -32,23 +32,23 @@
 
 /* Chicken Comb Crimson Red gradient — navbar, hero accents, primary CTA */
 .gradient-farm {
-  background: linear-gradient(135deg, #881337 0%, #be123c 55%, #e11d48 100%);
+  background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 50%, #b91c1c 100%);
 }
 
-/* Warm feather ivory & eggshell white gradient */
+/* Clean feather white & eggshell ivory gradient */
 .gradient-sand {
-  background: linear-gradient(180deg, #FFFFFF 0%, #FAF6EE 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 100%);
 }
 
-/* Glass card — elevated white with subtle chicken comb blush border */
+/* Glass card — elevated white with crisp modern border */
 .glass-card {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(254, 205, 211, 0.65);
+  border: 1px solid rgba(232, 229, 223, 0.8);
 }
 
 /* Warm poultry drop shadow for white broiler imagery */
 .chicken-glow {
-  filter: drop-shadow(0 20px 35px rgba(190, 18, 60, 0.16)) drop-shadow(0 6px 14px rgba(245, 158, 11, 0.12));
+  filter: drop-shadow(0 20px 35px rgba(153, 27, 27, 0.15)) drop-shadow(0 6px 14px rgba(245, 158, 11, 0.1));
 }
