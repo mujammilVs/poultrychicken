@@ -1,0 +1,275 @@
+import React, { useState, useEffect } from 'react';
+import { 
+  ShieldCheck, 
+  Phone, 
+  Menu, 
+  X, 
+  FileText, 
+  ChevronRight,
+  Sparkles,
+  ArrowUp,
+  Building,
+  ShoppingBag,
+  Activity,
+  Layers,
+  MapPin,
+  CheckCircle2,
+  Compass,
+  Mail
+} from 'lucide-react';
+import { companyData } from '../data/poultryData';
+
+export default function Navbar({ onOpenQuote }) {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Close menu on ESC key
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setMobileMenuOpen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  const scrollToTop = (e) => {
+    if (e) e.preventDefault();
+    setMobileMenuOpen(false);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+
+    if (href === '#' || href === '#top') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      return;
+    }
+
+    const targetId = href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Offset calculation for fixed dual header (~90px)
+      const headerOffset = 85;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const navLinks = [
+    { name: 'Home', href: '#', icon: ArrowUp },
+    { name: 'About', href: '#about', icon: Building },
+    { name: 'Products', href: '#products', icon: ShoppingBag },
+    { name: 'Operations', href: '#operations', icon: Activity },
+    { name: 'Facilities', href: '#facilities', icon: Layers },
+    { name: 'Farm Hubs', href: '#hubs', icon: MapPin },
+    { name: 'Compliance', href: '#compliance', icon: ShieldCheck },
+    { name: 'Future Farming', href: '#future', icon: Compass },
+    { name: 'Contact', href: '#contact', icon: Mail },
+  ];
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      
+      {/* Top Notification / Regulatory Bar */}
+      <div className="bg-farm-900 text-farm-100 text-xs py-2 px-3 sm:px-4 border-b border-farm-800">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+          
+          <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+            <span className="inline-flex items-center gap-1.5 bg-farm-800/90 text-amberGold-400 px-2.5 py-0.5 rounded-full font-semibold text-[11px] border border-farm-700 whitespace-nowrap">
+              <ShieldCheck className="w-3.5 h-3.5" /> ADAFSA & ADDED Certified
+            </span>
+            <span className="hidden md:inline text-farm-400">|</span>
+            <span className="hidden md:inline text-farm-200 text-[11px] whitespace-nowrap">
+              Al Wagan, Al Ain · 25 Farm Locations · 100 Poultry Sheds
+            </span>
+          </div>
+
+          <div className="flex items-center gap-3 sm:gap-4 text-[11px] ml-auto sm:ml-0">
+            <a 
+              href={`tel:${companyData.phone}`} 
+              className="flex items-center gap-1.5 text-farm-200 hover:text-white transition-colors whitespace-nowrap"
+            >
+              <Phone className="w-3 h-3 text-amberGold-400" />
+              <span>{companyData.phone}</span>
+            </a>
+            <span className="text-farm-700 hidden sm:inline">·</span>
+            <span className="text-amberGold-300 font-medium hidden sm:inline whitespace-nowrap">100% Fresh UAE Poultry</span>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Main Navigation Bar */}
+      <nav 
+        className={`transition-all duration-300 ${
+          isScrolled 
+            ? 'bg-white/95 backdrop-blur-md shadow-md py-2.5 sm:py-3 border-b border-farm-100' 
+            : 'bg-white/95 backdrop-blur-sm py-3 sm:py-4 border-b border-farm-50'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2 sm:gap-4">
+          
+          {/* Brand Logo & Title (Protected against shrinking and multiline wrapping) */}
+          <button 
+            type="button"
+            onClick={scrollToTop} 
+            className="flex items-center gap-2.5 sm:gap-3 group text-left focus:outline-none shrink-0 whitespace-nowrap"
+            title="Aamir Al Wagan Poultry Farm - Scroll to Top"
+          >
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-farm-800 text-white flex items-center justify-center shadow-md group-hover:bg-farm-700 transition-colors shrink-0">
+              <span className="text-lg sm:text-xl font-bold tracking-tight text-amberGold-400">AW</span>
+            </div>
+            
+            <div className="shrink-0">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="font-extrabold text-farm-900 text-sm sm:text-base lg:text-lg tracking-tight leading-tight whitespace-nowrap">
+                  AAMIR AL WAGAN
+                </span>
+                <span className="text-[10px] sm:text-xs bg-farm-100 text-farm-800 font-bold px-2 py-0.5 rounded shrink-0 whitespace-nowrap">
+                  Baraka Al Ain
+                </span>
+              </div>
+              <p className="text-[10px] sm:text-[11px] text-farm-600 font-semibold tracking-wide whitespace-nowrap">
+                POULTRY FARM L.L.C · بركة العين
+              </p>
+            </div>
+          </button>
+
+          {/* Desktop Navigation Links (Visible on xl: 1280px+ where ample space is guaranteed) */}
+          <div className="hidden xl:flex items-center gap-1 2xl:gap-2 shrink-0">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="px-2.5 py-1.5 text-xs 2xl:text-sm font-semibold text-gray-700 hover:text-farm-800 hover:bg-farm-50 rounded-lg transition-colors cursor-pointer whitespace-nowrap"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+
+          {/* Right Action Block (Quote CTA + Responsive Menu Button) */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            
+            {/* Request Quote Button (Always visible on tablets, mid-screens, and desktop) */}
+            <button
+              onClick={onOpenQuote}
+              className="inline-flex items-center gap-1.5 sm:gap-2 bg-farm-700 hover:bg-farm-800 text-white text-xs sm:text-sm font-bold px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-sm hover:shadow transition-all group shrink-0 whitespace-nowrap"
+            >
+              <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amberGold-400 shrink-0" />
+              <span>Request Quote</span>
+              <ChevronRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-farm-300 group-hover:translate-x-0.5 transition-transform hidden sm:inline shrink-0" />
+            </button>
+
+            {/* Mobile & Mid-Screen Menu Toggle (Visible below xl screens: mobile, tablets, mid-screens) */}
+            <div className="xl:hidden flex items-center">
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-2 sm:px-3 sm:py-2 rounded-xl text-farm-800 bg-farm-50 border border-farm-200 hover:bg-farm-100 focus:outline-none flex items-center gap-1.5 transition-colors"
+                aria-label="Toggle Navigation Menu"
+              >
+                {mobileMenuOpen ? (
+                  <>
+                    <X className="w-5 h-5 text-farm-800" />
+                    <span className="text-xs font-bold hidden sm:inline">Close</span>
+                  </>
+                ) : (
+                  <>
+                    <Menu className="w-5 h-5 text-farm-800" />
+                    <span className="text-xs font-bold hidden sm:inline">Menu</span>
+                  </>
+                )}
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </nav>
+
+      {/* Responsive Drawer for Mobile & Mid Screens (Tablets / Laptops < 1280px) */}
+      {mobileMenuOpen && (
+        <div className="xl:hidden bg-white/98 backdrop-blur-xl border-b border-farm-200 shadow-2xl animate-fadeIn max-h-[85vh] overflow-y-auto">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+            
+            {/* Regulatory Subtitle inside drawer */}
+            <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100 text-xs text-gray-500">
+              <span className="font-semibold text-farm-800">Navigation Menu</span>
+              <span className="text-[11px] bg-farm-50 text-farm-700 px-2.5 py-0.5 rounded-full font-medium">
+                Al Wagan, Al Ain
+              </span>
+            </div>
+
+            {/* 2-Column Responsive Grid on Tablets/Mid screens, 1-Col on Mobile */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 py-1">
+              {navLinks.map((link) => {
+                const IconComp = link.icon;
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-gray-800 hover:text-farm-900 hover:bg-farm-50 border border-transparent hover:border-farm-100 transition-all cursor-pointer"
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-farm-50 text-farm-700 flex items-center justify-center shrink-0">
+                      <IconComp className="w-4 h-4" />
+                    </div>
+                    <span>{link.name}</span>
+                  </a>
+                );
+              })}
+            </div>
+
+            {/* Drawer Actions */}
+            <div className="mt-4 pt-4 border-t border-gray-100 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenQuote();
+                }}
+                className="w-full inline-flex items-center justify-center gap-2 bg-farm-700 hover:bg-farm-800 text-white font-bold py-3 px-4 rounded-xl shadow text-xs sm:text-sm"
+              >
+                <FileText className="w-4 h-4 text-amberGold-400" />
+                <span>Request Wholesale Quote</span>
+              </button>
+              
+              <a
+                href={`tel:${companyData.phone}`}
+                className="w-full inline-flex items-center justify-center gap-2 bg-farm-50 text-farm-800 hover:bg-farm-100 font-semibold py-2.5 px-4 rounded-xl border border-farm-200 text-xs"
+              >
+                <Phone className="w-4 h-4 text-farm-600" />
+                <span>Call Desk: {companyData.phone}</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      )}
+
+    </header>
+  );
+}
