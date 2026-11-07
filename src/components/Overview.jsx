@@ -81,19 +81,20 @@ export default function Overview() {
           <div className="lg:col-span-5 rounded-3xl overflow-hidden shadow-soft border border-farm-200 relative min-h-[260px] sm:min-h-[300px]">
             <SafeImage
               src={companyData.images.aboutFarm}
-              alt="Aamir Al Wagan Modern Poultry Farm Infrastructure"
+              alt="Aamir Al Wagan Modern Broiler Poultry Sheds in Al Ain"
               className="w-full h-full object-cover"
-              fallbackIcon={Building2}
+              fallbackIcon={Feather}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-farm-950/80 via-farm-950/30 to-transparent flex flex-col justify-end p-5 sm:p-6 text-white">
-              <span className="text-[11px] text-amberGold-400 font-bold uppercase tracking-wider mb-1">
-                Modern Agritech & Biosecurity
+            <div className="absolute inset-0 bg-gradient-to-t from-farm-950/85 via-farm-950/35 to-transparent flex flex-col justify-end p-5 sm:p-6 text-white">
+              <span className="text-[11px] text-amberGold-400 font-bold uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                <Feather className="w-3.5 h-3.5 text-amberGold-400" />
+                <span>100 Bio-Secure Broiler Sheds · Al Ain</span>
               </span>
               <h4 className="text-base sm:text-lg font-bold text-white">
-                Eco-Conscious Poultry Sheds in Al Ain
+                Dedicated Broiler Poultry Rearing
               </h4>
               <p className="text-xs text-farm-200 mt-1 line-clamp-2">
-                Integrated climate control and waste recycling preserving the natural desert ecology.
+                Purely focused on raising healthy white broilers with balanced vegetarian grain and veterinarian oversight.
               </p>
             </div>
           </div>

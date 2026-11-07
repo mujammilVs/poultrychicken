@@ -55,7 +55,9 @@ export default function Products({ onOpenQuote, onSelectQuoteFromCalc }) {
                   <SafeImage
                     src={prod.image}
                     alt={prod.name}
-                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full transform hover:scale-105 transition-transform duration-500 ${
+                      prod.image.includes('white-broiler') ? 'object-contain p-3 bg-gradient-to-b from-white to-[#F5FAF6]' : 'object-cover'
+                    }`}
                     fallbackIcon={Feather}
                   />
                   <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] font-bold text-farm-900 border border-farm-200 shadow-xs">

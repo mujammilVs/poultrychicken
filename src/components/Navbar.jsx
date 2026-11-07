@@ -14,7 +14,8 @@ import {
   Layers,
   MapPin,
   CheckCircle2,
-  Compass,
+  Camera,
+  Feather,
   Mail
 } from 'lucide-react';
 import { companyData } from '../data/poultryData';
@@ -96,7 +97,7 @@ export default function Navbar({ onOpenQuote }) {
     { name: 'Facilities', href: '#facilities', icon: Layers },
     { name: 'Farm Hubs', href: '#hubs', icon: MapPin },
     { name: 'Compliance', href: '#compliance', icon: ShieldCheck },
-    { name: 'Future Farming', href: '#future', icon: Compass },
+    { name: 'Farm Gallery', href: '#gallery', icon: Camera },
     { name: 'Contact', href: '#contact', icon: Mail },
   ];
 
@@ -151,8 +152,16 @@ export default function Navbar({ onOpenQuote }) {
             className="flex items-center gap-2 sm:gap-3 group text-left focus:outline-none min-w-0"
             title="Aamir Al Wagan Poultry Farm - Scroll to Top"
           >
-            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-farm-800 text-white flex items-center justify-center shadow-md group-hover:bg-farm-700 transition-colors shrink-0">
-              <span className="text-base sm:text-xl font-bold tracking-tight text-amberGold-400">AW</span>
+            {/* Visual Poultry Emblem */}
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-farm-800 to-farm-900 border-2 border-amberGold-400/80 shadow-md group-hover:border-amberGold-400 transition-all shrink-0 flex items-center justify-center overflow-hidden p-1">
+              <img 
+                src="/images/white-broiler-chicken.png" 
+                alt="Broiler Poultry" 
+                className="w-full h-full object-contain filter drop-shadow group-hover:scale-110 transition-transform"
+              />
+              <span className="absolute bottom-0 right-0 bg-amberGold-400 text-farm-950 font-black text-[8px] px-1 rounded-tl leading-none">
+                AW
+              </span>
             </div>
             
             <div className="min-w-0">
@@ -160,13 +169,15 @@ export default function Navbar({ onOpenQuote }) {
                 <span className="font-extrabold text-farm-900 text-sm sm:text-base lg:text-lg tracking-tight leading-tight truncate">
                   AAMIR AL WAGAN
                 </span>
-                <span className="hidden sm:inline-block text-[10px] sm:text-xs bg-farm-100 text-farm-800 font-bold px-2 py-0.5 rounded shrink-0">
+                <span className="hidden sm:inline-block text-[10px] sm:text-xs bg-farm-100 text-farm-800 font-bold px-2 py-0.5 rounded border border-farm-200 shrink-0">
                   Baraka Al Ain
                 </span>
               </div>
-              <p className="text-[10px] sm:text-[11px] text-farm-600 font-semibold tracking-wide truncate">
+              <p className="text-[10px] sm:text-[11px] text-farm-700 font-semibold tracking-wide truncate flex items-center gap-1">
                 <span className="sm:hidden font-bold text-amberGold-700">Baraka Al Ain · </span>
-                <span>POULTRY FARM L.L.C · بركة العين</span>
+                <span className="text-farm-800 font-bold">FRESH POULTRY FARM</span>
+                <span className="text-farm-400">·</span>
+                <span className="text-gray-500">بركة العين</span>
               </p>
             </div>
           </button>

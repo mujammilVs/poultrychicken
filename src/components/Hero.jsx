@@ -45,20 +45,21 @@ export default function Hero({ onOpenQuote }) {
           
           {/* Left Column: Headlines & CTA (7 cols on desktop) */}
           <div className="lg:col-span-7 text-center lg:text-left">
-            <p className="text-xs sm:text-sm font-bold tracking-widest text-farm-700 uppercase mb-3">
-              {companyData.tagline}
-            </p>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-farm-100 text-farm-900 text-xs font-bold uppercase tracking-wider mb-3 border border-farm-200">
+              <Feather className="w-3.5 h-3.5 text-farm-700" />
+              <span>100% FRESH UAE BROILER POULTRY FARM</span>
+            </div>
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.12] mb-5 sm:mb-6">
-              Freshness You <span className="text-farm-700 underline decoration-amberGold-400 decoration-wavy decoration-2">Trust</span>.<br />
-              Quality You <span className="text-farm-800">Deserve</span>.
+              Fresh UAE <span className="text-farm-700 underline decoration-amberGold-400 decoration-wavy decoration-2">Broiler Chicken</span>.<br />
+              Direct From <span className="text-farm-800">Our Al Ain Farms</span>.
             </h1>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-normal leading-relaxed mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0">
-              Integrated modern poultry farming and trading operating <strong>100 bio-secure sheds</strong> across <strong>25 farm locations in Al Ain</strong>. 
-              Supplying UAE supermarkets, wholesalers, and restaurants with wholesome, traceable fresh chicken under strict ADAFSA standards.
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-normal leading-relaxed mb-6 sm:mb-7 max-w-2xl mx-auto lg:mx-0">
+              UAE’s dedicated broiler poultry producer operating <strong>100 modern bio-secure sheds</strong> across <strong>25 farm locations in Al Wagan, Al Ain</strong>. 
+              Supplying fresh chilled Halal whole chickens, bulk commercial cuts, and custom portioning under strict <strong>ADAFSA & ADDED standards</strong>.
             </p>
 
             {/* Responsive Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-6">
               <button
                 onClick={onOpenQuote}
                 className="inline-flex items-center justify-center gap-2 bg-farm-700 hover:bg-farm-800 text-white font-semibold px-6 sm:px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all transform active:scale-95"
@@ -70,8 +71,28 @@ export default function Hero({ onOpenQuote }) {
                 href="#products"
                 className="inline-flex items-center justify-center gap-2 bg-white hover:bg-farm-50 text-farm-900 font-semibold px-5 sm:px-6 py-3.5 rounded-xl border border-farm-200 shadow-sm transition-all"
               >
-                <span>Explore Fresh Cuts</span>
+                <span>Explore Fresh Poultry Cuts</span>
               </a>
+            </div>
+
+            {/* Quick Poultry Specs Strip */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6 max-w-2xl mx-auto lg:mx-0 text-left">
+              <div className="bg-white/90 p-2.5 rounded-xl border border-farm-100 shadow-xs">
+                <span className="text-[10px] text-gray-500 block uppercase font-bold">Breed</span>
+                <span className="text-xs font-bold text-farm-900">White Broiler</span>
+              </div>
+              <div className="bg-white/90 p-2.5 rounded-xl border border-farm-100 shadow-xs">
+                <span className="text-[10px] text-gray-500 block uppercase font-bold">Grades</span>
+                <span className="text-xs font-bold text-farm-900">800g – 1400g+</span>
+              </div>
+              <div className="bg-white/90 p-2.5 rounded-xl border border-farm-100 shadow-xs">
+                <span className="text-[10px] text-gray-500 block uppercase font-bold">Nutrition</span>
+                <span className="text-xs font-bold text-farm-900">100% Veg Grain</span>
+              </div>
+              <div className="bg-white/90 p-2.5 rounded-xl border border-farm-100 shadow-xs">
+                <span className="text-[10px] text-gray-500 block uppercase font-bold">Cold Chain</span>
+                <span className="text-xs font-bold text-emerald-700">0°C – 4°C Daily</span>
+              </div>
             </div>
 
             {/* Regulatory Badges Strip */}
@@ -97,47 +118,64 @@ export default function Hero({ onOpenQuote }) {
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
-              {/* White Broiler Chicken Showcase */}
-              <div className="relative flex items-center justify-center">
-                {/* Soft circular glow behind the chicken */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-farm-100/60 via-green-50/40 to-amberGold-100/40 blur-2xl"></div>
+              {/* White Broiler Chicken & Modern Shed Showcase Card */}
+              <div className="relative rounded-3xl bg-gradient-to-b from-white to-[#F5FAF6] p-4 sm:p-6 border-2 border-farm-200/80 shadow-2xl overflow-hidden">
+                
+                {/* Background Poultry Shed Visual */}
+                <div className="relative h-44 sm:h-52 w-full rounded-2xl overflow-hidden mb-3 border border-farm-100 shadow-inner">
+                  <img
+                    src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=80"
+                    alt="Al Wagan Modern Broiler Sheds"
+                    className="w-full h-full object-cover filter brightness-[0.92]"
+                    loading="eager"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-farm-950/80 via-farm-950/20 to-transparent flex items-end p-3">
+                    <span className="text-[11px] text-amberGold-300 font-bold tracking-wide">
+                      📍 Al Wagan Bio-Secure Broiler Sheds
+                    </span>
+                  </div>
                 </div>
 
-                {/* White Broiler Chicken Image (cut-out on transparent bg) */}
-                <img
-                  src="/images/white-broiler-chicken.png"
-                  alt="Premium White Broiler Chicken — Aamir Al Wagan Poultry Farm"
-                  className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 lg:w-[380px] lg:h-[380px] object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-700"
-                  loading="eager"
-                />
+                {/* White Broiler Chicken Cutout Overlay */}
+                <div className="relative -mt-20 sm:-mt-24 flex items-center justify-center">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-56 h-56 rounded-full bg-amberGold-200/30 blur-2xl"></div>
+                  </div>
+                  <img
+                    src="/images/white-broiler-chicken.png"
+                    alt="Premium White Broiler Chicken — Aamir Al Wagan Poultry Farm"
+                    className="relative z-10 w-48 h-48 sm:w-60 sm:h-60 object-contain chicken-glow transform hover:scale-105 transition-transform duration-500"
+                    loading="eager"
+                  />
+                </div>
 
                 {/* Floating Stat Badge 1: 2M Birds */}
-                <div className="absolute top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-lg border border-farm-100 flex items-center gap-3 animate-fadeIn z-20">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-farm-100 text-farm-700 flex items-center justify-center shrink-0">
-                    <Feather className="w-5 h-5 text-farm-700" />
+                <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-md px-3 py-2 rounded-xl shadow-lg border border-farm-200 flex items-center gap-2.5 z-20">
+                  <div className="w-7 h-7 rounded-lg bg-farm-100 text-farm-700 flex items-center justify-center shrink-0">
+                    <Feather className="w-4 h-4 text-farm-700" />
                   </div>
                   <div>
-                    <div className="text-sm sm:text-base font-extrabold text-farm-900 leading-tight">2 Million</div>
-                    <div className="text-[10px] sm:text-xs text-gray-500 font-medium">Birds Total Capacity</div>
-                  </div>
-                </div>
-
-                {/* Floating Stat Badge 2: Daily Cold-Chain Delivery */}
-                <div className="absolute bottom-4 -right-4 sm:-right-6 bg-farm-900 text-white p-3 sm:p-4 rounded-2xl shadow-xl border border-farm-700 flex items-center gap-3 z-20">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-farm-800 text-amberGold-400 flex items-center justify-center shrink-0">
-                    <Truck className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="text-sm sm:text-base font-bold text-amberGold-400 leading-tight">0°C - 4°C Fresh</div>
-                    <div className="text-[10px] sm:text-xs text-farm-200">Daily UAE Cold Chain</div>
+                    <div className="text-xs font-extrabold text-farm-900 leading-none">2M+ Birds</div>
+                    <div className="text-[9px] text-gray-500 font-medium">100 Poultry Sheds</div>
                   </div>
                 </div>
 
                 {/* Halal Badge */}
-                <div className="absolute -top-2 right-0 sm:right-2 bg-amberGold-400 text-farm-900 px-3 py-1.5 rounded-full text-[11px] font-extrabold shadow-lg z-20 tracking-wide">
-                  ✓ 100% Halal
+                <div className="absolute top-6 right-6 bg-amberGold-400 text-farm-950 px-3 py-1 rounded-full text-[10px] font-black shadow-md z-20 tracking-wider">
+                  ✓ 100% HALAL
                 </div>
+
+                {/* Bottom Spec Footer inside Card */}
+                <div className="relative z-20 mt-1 pt-3 border-t border-farm-200/70 flex items-center justify-between text-xs text-farm-800">
+                  <div className="flex items-center gap-1.5 font-bold">
+                    <Truck className="w-4 h-4 text-farm-700" />
+                    <span>0°C - 4°C Daily Chilled Fleet</span>
+                  </div>
+                  <span className="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded text-[10px] font-bold">
+                    ADAFSA Verified
+                  </span>
+                </div>
+
               </div>
 
             </div>

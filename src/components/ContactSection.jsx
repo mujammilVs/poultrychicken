@@ -8,7 +8,7 @@ import {
   CheckCircle2, 
   Building, 
   ShieldCheck, 
-  MessageSquare,
+  PhoneCall,
   Sparkles,
   HelpCircle,
   X
@@ -135,7 +135,7 @@ export default function ContactSection({ selectedQuoteData, clearSelectedQuote }
                       {companyData.phone}
                     </a>
                     <a href={`tel:${companyData.mobile}`} className="text-gray-600 text-xs hover:underline block">
-                      Mobile / WhatsApp: {companyData.mobile}
+                      Direct Mobile / Orders: {companyData.mobile}
                     </a>
                   </div>
                 </div>
@@ -162,16 +162,14 @@ export default function ContactSection({ selectedQuoteData, clearSelectedQuote }
                 </div>
               </div>
 
-              {/* Direct WhatsApp Action */}
+              {/* Direct Phone Call Action */}
               <div className="mt-6 pt-5 border-t border-gray-100">
                 <a
-                  href={`https://wa.me/971508291199?text=${encodeURIComponent("Hello Baraka Al Ain, I would like to inquire about fresh chicken wholesale supply.")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold py-3 px-4 rounded-xl shadow-sm transition-all"
+                  href={`tel:${companyData.phone}`}
+                  className="w-full inline-flex items-center justify-center gap-2 bg-farm-800 hover:bg-farm-700 text-white font-semibold py-3 px-4 rounded-xl shadow-sm transition-all text-xs sm:text-sm"
                 >
-                  <MessageSquare className="w-4 h-4" />
-                  <span>Chat on WhatsApp Directly</span>
+                  <PhoneCall className="w-4 h-4 text-amberGold-400" />
+                  <span>Call Commercial Order Desk ({companyData.phone})</span>
                 </a>
               </div>
             </div>

@@ -7,12 +7,12 @@ import FarmOperations from './components/FarmOperations';
 import Facilities from './components/Facilities';
 import LocationsHub from './components/LocationsHub';
 import QualityCompliance from './components/QualityCompliance';
-import FutureInitiatives from './components/FutureInitiatives';
+import PoultryGallery from './components/PoultryGallery';
 import TeamSection from './components/TeamSection';
 import FaqSection from './components/FaqSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import { MessageSquare, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { companyData } from './data/poultryData';
 
 export default function App() {
@@ -101,8 +101,8 @@ export default function App() {
         {/* Quality, ADAFSA & ADDED Compliance */}
         <QualityCompliance />
 
-        {/* Future Diversification: Goat, Fish & Agricultural Farming */}
-        <FutureInitiatives />
+        {/* Live Poultry Operations & Farm Gallery */}
+        <PoultryGallery />
 
         {/* Leadership & Operations Governance */}
         <TeamSection />
@@ -135,20 +135,6 @@ export default function App() {
             <ArrowUp className="w-5 h-5 text-amberGold-400" />
           </button>
         )}
-
-        {/* Floating WhatsApp Action Button */}
-        <a
-          href={`https://wa.me/971508291199?text=${encodeURIComponent("Hello Baraka Al Ain, I would like to inquire about fresh chicken wholesale supply.")}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 sm:p-3.5 rounded-full bg-[#25D366] text-white shadow-xl hover:scale-105 transition-transform flex items-center justify-center group"
-          title="Chat on WhatsApp"
-        >
-          <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6" />
-          <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-semibold pl-0 group-hover:pl-2">
-            WhatsApp Sales
-          </span>
-        </a>
 
       </div>
     </div>

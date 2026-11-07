@@ -48,17 +48,21 @@ export default function Footer() {
               <button 
                 type="button"
                 onClick={scrollToTop}
-                className="w-12 h-12 rounded-xl bg-farm-800 text-amberGold-400 flex items-center justify-center font-black text-xl border border-farm-700 hover:bg-farm-700 transition-colors"
+                className="w-12 h-12 rounded-xl bg-gradient-to-br from-farm-800 to-farm-900 border border-amberGold-400/80 p-1 flex items-center justify-center hover:scale-105 transition-all shadow-md shrink-0"
                 title="Scroll to Top"
               >
-                AW
+                <img 
+                  src="/images/white-broiler-chicken.png" 
+                  alt="Aamir Al Wagan Poultry Farm" 
+                  className="w-full h-full object-contain filter drop-shadow"
+                />
               </button>
               <div>
                 <span className="font-bold text-lg text-white tracking-tight block">
                   AAMIR AL WAGAN POULTRY FARM L.L.C
                 </span>
-                <span className="text-xs text-amberGold-400 font-semibold">
-                  Trading as Baraka Al Ain · بركة العين
+                <span className="text-xs text-amberGold-400 font-semibold block">
+                  Baraka Al Ain · 100% Fresh UAE Broiler Chicken · بركة العين
                 </span>
               </div>
             </div>
@@ -99,7 +103,7 @@ export default function Footer() {
               <li><button type="button" onClick={(e) => handleLinkClick(e, 'facilities')} className="hover:text-white transition-colors text-left">Facilities & Slaughterhouse</button></li>
               <li><button type="button" onClick={(e) => handleLinkClick(e, 'hubs')} className="hover:text-white transition-colors text-left">25 Farm Hubs in Al Ain</button></li>
               <li><button type="button" onClick={(e) => handleLinkClick(e, 'compliance')} className="hover:text-white transition-colors text-left">Regulatory Compliance</button></li>
-              <li><button type="button" onClick={(e) => handleLinkClick(e, 'future')} className="hover:text-white transition-colors text-left">Future Farming Roadmap</button></li>
+              <li><button type="button" onClick={(e) => handleLinkClick(e, 'gallery')} className="hover:text-white transition-colors text-left">Poultry Farm Gallery</button></li>
             </ul>
           </div>
 

@@ -10,9 +10,11 @@ import {
   ArrowRight,
   ShieldCheck,
   CheckCircle2,
-  Sparkles
+  Sparkles,
+  Feather
 } from 'lucide-react';
 import { companyData } from '../data/poultryData';
+import SafeImage from './SafeImage';
 
 export default function FarmOperations() {
   const [activeStep, setActiveStep] = useState(1);
@@ -118,12 +120,31 @@ export default function FarmOperations() {
               </div>
             </div>
 
-            <div className="shrink-0 flex flex-col items-center justify-center bg-white p-5 sm:p-6 rounded-2xl border border-farm-200 text-center min-w-[200px] sm:min-w-[240px]">
-              <span className="text-[11px] text-gray-500 font-medium">Standard Operating Cycle</span>
-              <span className="text-2xl sm:text-3xl font-extrabold text-farm-800 my-1">24 / 7</span>
-              <span className="text-[11px] sm:text-xs font-semibold text-amberGold-700 bg-amberGold-50 px-3 py-1 rounded-full border border-amberGold-200">
-                Coordinated Across 25 Hubs
-              </span>
+            <div className="shrink-0 flex flex-col sm:flex-row items-center gap-4">
+              {/* Stage Visual Image */}
+              {currentStage.image && (
+                <div className="w-36 h-28 sm:w-44 sm:h-32 rounded-2xl overflow-hidden border border-farm-200 shadow-sm relative bg-farm-100">
+                  <SafeImage
+                    src={currentStage.image}
+                    alt={currentStage.title}
+                    className={`w-full h-full ${
+                      currentStage.image.includes('white-broiler') ? 'object-contain p-2 bg-gradient-to-b from-white to-farm-50' : 'object-cover'
+                    }`}
+                    fallbackIcon={Feather}
+                  />
+                  <div className="absolute bottom-1 right-1 bg-farm-900/80 text-amberGold-300 text-[9px] font-bold px-1.5 py-0.5 rounded">
+                    Stage {currentStage.step}
+                  </div>
+                </div>
+              )}
+
+              <div className="flex flex-col items-center justify-center bg-white p-4 sm:p-5 rounded-2xl border border-farm-200 text-center min-w-[170px]">
+                <span className="text-[10px] text-gray-500 font-medium">Operating Cycle</span>
+                <span className="text-xl sm:text-2xl font-extrabold text-farm-800 my-0.5">24 / 7</span>
+                <span className="text-[10px] sm:text-[11px] font-semibold text-amberGold-800 bg-amberGold-50 px-2.5 py-0.5 rounded-full border border-amberGold-200">
+                  25 Al Ain Hubs
+                </span>
+              </div>
             </div>
 
           </div>
