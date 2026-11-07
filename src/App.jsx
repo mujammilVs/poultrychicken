@@ -71,7 +71,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FCFBF7] text-gray-800 font-sans selection:bg-farm-700 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-white text-gray-800 font-sans selection:bg-farm-700 selection:text-white">
       {/* Navigation with smooth scroll to top on Home/Logo */}
       <Navbar onOpenQuote={() => handleOpenQuote()} />
 

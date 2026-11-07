@@ -13,12 +13,12 @@ export const companyData = {
   workingHours: "Saturday - Thursday: 6:00 AM - 6:00 PM (Farm Operations: 24/7)",
   
   images: {
-    hero: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1600&q=80", // Modern bio-secure flock
-    heroFarm: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1400&q=80", // Al Ain agricultural landscape
-    aboutFarm: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1200&q=80", // Modern farm sheds & infrastructure
-    slaughterhouse: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80", // Ultra-clean hygienic processing & testing
-    feedMill: "https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=1200&q=80", // Feed grain & nutrition
-    coldLogistics: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80", // Temperature-controlled transport
+    hero: "/images/white-broiler-chicken.png", // White broiler chicken — user uploaded
+    heroFarm: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1400&q=80", // White broiler chicken flock in modern shed
+    aboutFarm: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=1200&q=80", // Poultry farm chickens
+    slaughterhouse: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=1200&q=80", // Fresh whole chicken — hygienic processing
+    feedMill: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1200&q=80", // Grain & feed for poultry
+    coldLogistics: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80", // Temperature-controlled cold chain transport
   },
 
   licenses: [
@@ -139,7 +139,7 @@ export const companyData = {
       id: "fresh-whole",
       name: "Fresh Whole Chickens",
       tagline: "Farm-Fresh, Plump & Hygienically Graded",
-      image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80", // Fresh whole chicken packaged
       description: "Fresh chicken supplied with hygienic handling, strict temperature control, and premium packaging designed for supermarkets, butcheries, and culinary kitchens.",
       segments: ["Wholesalers", "Retailers", "Supermarkets", "Hypermarkets"],
       features: [
@@ -156,7 +156,7 @@ export const companyData = {
       id: "bulk-supply",
       name: "Bulk Fresh Chicken Supply",
       tagline: "Contract Supply for Commercial Kitchens & Catering",
-      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=800&q=80", // White broiler chickens in shed — bulk supply
       description: "High-volume fresh chicken supplied in bulk quantities according to custom schedule requirements. Guaranteed freshness delivered in refrigerated logistics.",
       segments: ["Hotels", "Restaurants", "Catering Companies (HORECA)", "Institutional Kitchens"],
       features: [
@@ -173,7 +173,7 @@ export const companyData = {
       id: "custom-supply",
       name: "Customised Chicken Supply",
       tagline: "Tailored Cuts, Specific Weights & Custom Packaging",
-      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80", // Portioned chicken cuts — custom packaging
       description: "Custom supply arrangements based on requested cut specifications, precise weight bands, vacuum or modified atmosphere packaging (MAP), and private labeling.",
       segments: ["Food Distributors", "Commercial Food Processors", "Specialty Food Chains"],
       features: [
@@ -239,14 +239,14 @@ export const companyData = {
       title: "Feed Production Facility",
       desc: "Dedicated feed manufacturing mill producing tailored, balanced, nutritious poultry feed to support continuous, self-sufficient farm growth.",
       stat: "10,000 t / Year",
-      image: "https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=700&q=80",
       icon: "Wheat"
     },
     {
       title: "Feed Storage Silos",
       desc: "Modern climate-protected storage silos for the safe storage and pest-free handling of grain and poultry feed reserves.",
       stat: "Continuous Reserve",
-      image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=700&q=80",
       icon: "Database"
     },
     {
@@ -260,14 +260,14 @@ export const companyData = {
       title: "Modern Farm Machinery",
       desc: "Dedicated equipment rooms, backup generators, temperature monitoring sensors, and automated ventilation machinery.",
       stat: "Automated Agritech",
-      image: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=700&q=80",
       icon: "Wrench"
     },
     {
       title: "In-house Slaughterhouse",
       desc: "Modern processing facility capable of hygienically processing 4,000 birds per hour under strict veterinary and Halal inspection.",
       stat: "4,000 Birds / Hr",
-      image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=700&q=80",
       icon: "Zap"
     },
     {
@@ -281,7 +281,7 @@ export const companyData = {
       title: "Supporting Infrastructure",
       desc: "Administrative offices, staff quarters, veterinary diagnostic laboratory, and biosecurity sanitation vehicle wash bays.",
       stat: "25 Locations",
-      image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=700&q=80",
+      image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=700&q=80",
       icon: "ShieldCheck"
     }
   ],
@@ -294,7 +294,7 @@ export const companyData = {
       shedCount: "35 Sheds",
       locationDesc: "Southern Al Ain agricultural belt",
       specialty: "Primary Broiler Operations & Main In-House Processing",
-      image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=80",
       highlights: ["Central Veterinary Lab", "Main Slaughterhouse (4k/hr)", "Central Dispatch Fleet"]
     },
     {
@@ -304,7 +304,7 @@ export const companyData = {
       shedCount: "25 Sheds",
       locationDesc: "North-West Al Ain corridor",
       specialty: "Controlled Environment Broiler Rearing",
-      image: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=800&q=80",
       highlights: ["Automated Climate Controls", "Dual Biosecurity Gates", "Independent Water RO Plant"]
     },
     {
@@ -314,7 +314,7 @@ export const companyData = {
       shedCount: "20 Sheds",
       locationDesc: "Eastern Al Ain pastoral zone",
       specialty: "Feed Milling & Dedicated Broiler Infrastructure",
-      image: "https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80",
       highlights: ["10,000t Feed Mill Facility", "Grain Storage Silos", "Solar Energy Pilot Sheds"]
     },
     {
@@ -324,7 +324,7 @@ export const companyData = {
       shedCount: "20 Sheds",
       locationDesc: "Strategic Al Ain green perimeter",
       specialty: "High-Biosecurity Quarantine & Raising Facilities",
-      image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80",
       highlights: ["Ultra-low Density Rearing", "ADAFSA Priority Audited", "Strict Perimeter Isolation"]
     }
   ],
@@ -332,43 +332,42 @@ export const companyData = {
   futureInitiatives: [
     {
       number: "01",
-      title: "Goat Farming",
-      desc: "Establishing goat farming operations focused on breeding, rearing, and supplying healthy goats for quality meat and related products.",
-      image: "https://images.unsplash.com/photo-1524024973431-2ad916746881?auto=format&fit=crop&w=800&q=80",
+      title: "GCC Export Market Expansion",
+      desc: "Scaling our premium fresh broiler supply into GCC export markets, targeting Saudi Arabia, Oman, Qatar, and Bahrain through certified cold-chain logistics and compliant international packaging.",
+      image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80",
       bulletPoints: [
-        "Developing dedicated modern facilities for goat breeding and ethical rearing.",
-        "Maintaining proper animal health, organic nutrition, and dedicated veterinary care.",
-        "Ensuring hygienic handling and adherence to national quality standards."
+        "Obtaining GCC cross-border food export certifications and permits.",
+        "Establishing temperature-logged refrigerated logistics routes across GCC borders.",
+        "Building dedicated export packaging lines with multilingual labeling and barcoding."
       ],
-      icon: "Compass",
-      badge: "Upcoming Expansion"
+      icon: "Globe",
+      badge: "2025 Roadmap"
     },
     {
       number: "02",
-      title: "Fish Farming (Aquaculture)",
-      desc: "Developing sustainable fish farming and aquaculture operations to produce and supply fresh, high-quality fish for UAE consumers.",
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      title: "New Processing Line Expansion",
+      desc: "Doubling our in-house slaughterhouse processing capacity to 8,000 birds per hour with a second modern Halal processing line, advanced portioning, and packaging automation.",
+      image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80",
       bulletPoints: [
-        "Establishing suitable freshwater fish farming facilities and recirculating systems.",
-        "Implementing advanced water quality management and bio-secure fish health systems.",
-        "Developing rapid harvesting and cold-distribution channels."
+        "Installing a second automated Halal slaughter and processing line.",
+        "Integrating robotic portioning, vacuum sealing, and portion control systems.",
+        "Achieving 8,000 birds per hour total processing throughput with full ADAFSA compliance."
       ],
-      icon: "Fish",
-      badge: "Upcoming Expansion"
+      icon: "Zap",
+      badge: "Capacity Growth"
     },
     {
       number: "03",
-      title: "Agricultural Farming",
-      desc: "Expanding into the cultivation of fresh vegetables and fruits using sustainable agricultural practices to support UAE food security.",
-      image: "https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80",
+      title: "Smart Poultry Farm Technology",
+      desc: "Implementing AI-powered flock monitoring, IoT climate controls, and data-driven feed management across all 100 sheds to maximize bird performance and biosecurity.",
+      image: "https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=800&q=80",
       bulletPoints: [
-        "Cultivating a wide variety of seasonal fresh vegetables and orchard fruits.",
-        "Adopting modern drip irrigation and hyper-efficient water conservation systems.",
-        "Following integrated pest management (IPM) and residue-free crop protection.",
-        "Maintaining peak nutritional quality throughout harvesting and distribution."
+        "Deploying IoT sensors for real-time shed temperature, humidity, and ammonia monitoring.",
+        "Integrating AI-driven flock weight tracking and feed optimization algorithms.",
+        "Connecting all 25 farm locations to a centralised digital operations dashboard."
       ],
-      icon: "Sprout",
-      badge: "Upcoming Expansion"
+      icon: "Cpu",
+      badge: "Smart Farming"
     }
   ],
 

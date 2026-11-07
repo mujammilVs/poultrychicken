@@ -6,38 +6,49 @@
   html {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   }
+  body {
+    background-color: #FFFFFF;
+  }
 }
 
-/* Custom scrollbar for farm theme */
+/* Custom scrollbar — clean white broiler theme */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #f5f2e7;
+  background: #f0f7f2;
 }
 ::-webkit-scrollbar-thumb {
-  background: #9ec9a8;
-  border-radius: 4px;
+  background: #7ec897;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #488c5a;
+  background: #367246;
 }
 
 .serif-title {
   font-family: 'Playfair Display', Georgia, serif;
 }
 
+/* Deep farm green gradient — navbar, hero accents */
 .gradient-farm {
   background: linear-gradient(135deg, #1c3d26 0%, #2c5b39 60%, #367246 100%);
 }
 
+/* Clean bright white-to-light gradient for sections */
 .gradient-sand {
-  background: linear-gradient(180deg, #FAF8F2 0%, #F5F2E7 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F7FBF8 100%);
 }
 
+/* Glass card — elevated white with subtle green border */
 .glass-card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(227, 239, 230, 0.7);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(180, 225, 195, 0.6);
+}
+
+/* Soft drop shadow for chicken imagery */
+.chicken-glow {
+  filter: drop-shadow(0 20px 40px rgba(44, 91, 57, 0.18)) drop-shadow(0 4px 12px rgba(0,0,0,0.08));
 }

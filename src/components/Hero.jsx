@@ -14,7 +14,6 @@ import {
   PhoneCall
 } from 'lucide-react';
 import { companyData } from '../data/poultryData';
-import SafeImage from './SafeImage';
 
 export default function Hero({ onOpenQuote }) {
   return (
@@ -98,35 +97,46 @@ export default function Hero({ onOpenQuote }) {
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
-              {/* Main Visual Image Card */}
-              <div className="rounded-3xl overflow-hidden shadow-premium border-4 border-white aspect-[4/3] sm:aspect-[16/11]">
-                <SafeImage
-                  src={companyData.images.hero}
-                  alt="Aamir Al Wagan Modern Poultry Farm in Al Ain"
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
-                  fallbackIcon={Feather}
+              {/* White Broiler Chicken Showcase */}
+              <div className="relative flex items-center justify-center">
+                {/* Soft circular glow behind the chicken */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-br from-farm-100/60 via-green-50/40 to-amberGold-100/40 blur-2xl"></div>
+                </div>
+
+                {/* White Broiler Chicken Image (cut-out on transparent bg) */}
+                <img
+                  src="/images/white-broiler-chicken.png"
+                  alt="Premium White Broiler Chicken — Aamir Al Wagan Poultry Farm"
+                  className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 lg:w-[380px] lg:h-[380px] object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-700"
+                  loading="eager"
                 />
-              </div>
 
-              {/* Floating Stat Badge 1: 2M Birds */}
-              <div className="absolute -top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-lg border border-farm-100 flex items-center gap-3 animate-fadeIn">
-                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-farm-100 text-farm-700 flex items-center justify-center shrink-0">
-                  <Feather className="w-5 h-5 text-farm-700" />
+                {/* Floating Stat Badge 1: 2M Birds */}
+                <div className="absolute top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-lg border border-farm-100 flex items-center gap-3 animate-fadeIn z-20">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-farm-100 text-farm-700 flex items-center justify-center shrink-0">
+                    <Feather className="w-5 h-5 text-farm-700" />
+                  </div>
+                  <div>
+                    <div className="text-sm sm:text-base font-extrabold text-farm-900 leading-tight">2 Million</div>
+                    <div className="text-[10px] sm:text-xs text-gray-500 font-medium">Birds Total Capacity</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-sm sm:text-base font-extrabold text-farm-900 leading-tight">2 Million</div>
-                  <div className="text-[10px] sm:text-xs text-gray-500 font-medium">Birds Total Capacity</div>
-                </div>
-              </div>
 
-              {/* Floating Stat Badge 2: Daily Cold-Chain Delivery */}
-              <div className="absolute -bottom-4 -right-4 sm:-right-6 bg-farm-900 text-white p-3 sm:p-4 rounded-2xl shadow-xl border border-farm-700 flex items-center gap-3">
-                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-farm-800 text-amberGold-400 flex items-center justify-center shrink-0">
-                  <Truck className="w-5 h-5" />
+                {/* Floating Stat Badge 2: Daily Cold-Chain Delivery */}
+                <div className="absolute bottom-4 -right-4 sm:-right-6 bg-farm-900 text-white p-3 sm:p-4 rounded-2xl shadow-xl border border-farm-700 flex items-center gap-3 z-20">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-farm-800 text-amberGold-400 flex items-center justify-center shrink-0">
+                    <Truck className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-sm sm:text-base font-bold text-amberGold-400 leading-tight">0°C - 4°C Fresh</div>
+                    <div className="text-[10px] sm:text-xs text-farm-200">Daily UAE Cold Chain</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-sm sm:text-base font-bold text-amberGold-400 leading-tight">0°C - 4°C Fresh</div>
-                  <div className="text-[10px] sm:text-xs text-farm-200">Daily UAE Cold Chain</div>
+
+                {/* Halal Badge */}
+                <div className="absolute -top-2 right-0 sm:right-2 bg-amberGold-400 text-farm-900 px-3 py-1.5 rounded-full text-[11px] font-extrabold shadow-lg z-20 tracking-wide">
+                  ✓ 100% Halal
                 </div>
               </div>
 

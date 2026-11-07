@@ -1,22 +1,22 @@
 import React from 'react';
 import { 
   Sparkles, 
-  Sprout, 
-  Fish, 
+  Globe, 
+  Zap, 
+  Cpu,
   CheckCircle2, 
   TrendingUp, 
   ArrowUpRight,
-  ShieldCheck,
-  Compass
+  ShieldCheck
 } from 'lucide-react';
 import { companyData } from '../data/poultryData';
 import SafeImage from './SafeImage';
 
 export default function FutureInitiatives() {
   const iconMap = {
-    Compass: Compass,
-    Fish: Fish,
-    Sprout: Sprout
+    Globe: Globe,
+    Zap: Zap,
+    Cpu: Cpu
   };
 
   return (
@@ -27,14 +27,15 @@ export default function FutureInitiatives() {
         <div className="max-w-3xl mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amberGold-100 text-amberGold-900 text-xs font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5 text-amberGold-700" />
-            <span>STRATEGIC DIVERSIFICATION ROADMAP</span>
+            <span>GROWTH & EXPANSION ROADMAP</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
-            Future Agricultural & Livestock Initiatives
+            Future Poultry Growth Initiatives
           </h2>
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
-            In addition to our existing comprehensive poultry operations, Aamir Al Wagan Poultry Farm L.L.C plans to 
-            expand and diversify our agro-pastoral footprint into high-value sustainable sectors to bolster UAE national food security.
+            Building on our established broiler operations, Aamir Al Wagan Poultry Farm L.L.C is investing in 
+            strategic growth across GCC export markets, expanded processing capacity, and smart agritech to 
+            lead UAE's poultry industry into the future.
           </p>
         </div>
 
@@ -68,7 +69,7 @@ export default function FutureInitiatives() {
                   <div className="p-6 sm:p-7">
                     <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">{item.title}</h3>
                     <p className="text-xs text-farm-700 font-semibold mb-3">
-                      Sustainable Food Production
+                      Poultry Industry Growth
                     </p>
                     <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-5">
                       {item.desc}
@@ -99,12 +100,12 @@ export default function FutureInitiatives() {
         <div className="bg-farm-900 text-white p-6 sm:p-8 lg:p-10 rounded-3xl border border-farm-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="max-w-3xl">
             <h4 className="text-lg sm:text-xl font-bold text-white mb-2">
-              Our Unified Sustainability & Quality Commitment
+              Leading UAE's Poultry Industry Forward
             </h4>
             <p className="text-xs sm:text-sm text-farm-200 leading-relaxed">
-              Across all current and future activities, we aim to develop environmentally responsible farming operations 
-              through efficient resource use, proper waste management, responsible water consumption, and continuous 
-              improvement in farming practices.
+              Every initiative is built on our core poultry expertise — growing from 25 farm locations 
+              to a fully integrated, tech-enabled, GCC-export-ready broiler supply chain. 
+              Fresh. Halal. Traceable. From our sheds to your table.
             </p>
           </div>
           <div className="shrink-0">
